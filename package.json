@@ -1,0 +1,29 @@
+{
+	"name": "mongodb-service",
+	"version": "0.0.1",
+	"description": "",
+	"license": "MIT",
+	"repository": "https://github.com/manishsaraan/mongodb-service.git",
+	"author": {
+		"name": "manishsaraan",
+		"email": "manish021js@gmail.com",
+		"url": "www.manishsaraan.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	}
+}
