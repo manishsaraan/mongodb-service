@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 var TestModel = new Schema({
   fname:String,
   lname:String,
-  username:Boolean,
-  email:Boolean,
+  username:String,
+  email:String,
 });
 
 mongoose.model('TestModel', TestModel);
