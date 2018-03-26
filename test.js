@@ -1,11 +1,23 @@
-import test from 'ava';
-import m from '.';
+const m = require('.');
+const mongoose = require('mongoose');
+const config = require('./config/config');
+require('./model/TestModel');
 
-test('title', t => {
-	const err = t.throws(() => {
-		m(123);
-	}, TypeError);
-	t.is(err.message, 'Expected a string, got number');
+mongoose.connect(config.url);
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+var  TestModel = mongoose.model('TestModel');
 
-	t.is(m('unicorns'), 'unicorns & rainbows');
+m.create({groupName : 'etst', userName : 'test', showchord : false, showfret : false}, TestModel).then( (data) => {
+    console.log(data);
+}).
+catch( err => {
+    console.log(err);
 });
+
+m.get({groupName : 'etst'}, TestModel).
+then( data => {
+   console.log(data);
+}).
+catch( err => console.log(err));
+
