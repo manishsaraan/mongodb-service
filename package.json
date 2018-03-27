@@ -1,7 +1,7 @@
 {
   "name": "mongodb-service",
   "version": "0.0.1",
-  "description": "",
+  "description": "A mongodb service to perform db operations with promises.",
   "license": "MIT",
   "repository": "https://github.com/manishsaraan/mongodb-service.git",
   "author": {
@@ -10,16 +10,19 @@
     "url": "www.manishsaraan.com"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
-    "test": "xo && mocha test.js"
+    "test": "mocha index.js",
+    "lint" : "xo --fix"
   },
   "files": [
     "index.js"
   ],
   "keywords": [
-    ""
+    "mongoose",
+    "mongodb",
+    "mongodb-service"
   ],
   "dependencies": {},
   "devDependencies": {
