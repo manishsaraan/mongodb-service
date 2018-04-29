@@ -3,7 +3,6 @@
 A service to perform mongoose queries with promises.
 
 [![version](https://img.shields.io/npm/v/mongodb-service.svg?style=flat-square)]((http://npm.im/mongodb-service))
-[![downloads](https://img.shields.io/npm/dm/mongodb-service.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mongodb-service&from=2018-01-01&to=2029-03-16)
 [![MIT License](https://img.shields.io/npm/l/mongodb-service.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/xojs/xo)
 

@@ -1,6 +1,6 @@
 {
   "name": "mongodb-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mongodb service to perform db operations with promises.",
   "license": "MIT",
   "repository": "https://github.com/manishsaraan/mongodb-service.git",
